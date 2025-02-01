@@ -14,7 +14,7 @@ fetch("https://fakestoreapi.com/products")
             x.appendChild(kart);
             kart.addEventListener("click", () => {
                 modalac(item);
-            })
+            });
         });
     }  
 function modalac(item) {
