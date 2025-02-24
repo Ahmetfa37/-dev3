@@ -1,0 +1,308 @@
+@font-face {
+    font-family: inter;
+    src: url(/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: manrope;
+    src: url(/font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: sora;
+    src: url(/font/Sora/Sora-VariableFont_wght.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    background-color: rgb(201, 183, 160);
+    font-family: sora;
+    height: 100%;
+    width: 100%;
+}
+button {
+    background-color: chocolate;
+    border: 2px solid rgb(165, 104, 13);
+    font-family: inter;
+    border-radius: 50px;
+    padding: 12px 5px;
+    user-select: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+}
+.header-table {
+    z-index: 1;
+    display: table;
+    position: fixed;
+    width: 100%;
+}
+.header-table-cell {
+    background-color: rgb(235, 186, 127);
+    display: table-cell;
+    padding: 10px;
+    width: 100%;
+}
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.header-content-container {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+.click-event:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+.click-event:active {
+    transform: translateY(2px);
+    transition: transform 0.1;
+}
+.header-logo {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+.header-content {
+    flex-direction: column;
+    display: flex;
+}
+.header-content span:nth-child(1) {
+    font-family: sora;
+    color: rgb(0, 128, 53);
+    font-size: 22px;
+
+}
+.header-content span:nth-child(2) {
+    font-family: inter;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(67, 104, 104);
+}
+.nav-container {
+    display: flex;
+    gap: 10px;
+}
+.gost {
+    background-color: transparent; 
+    border: 2px solid green;
+
+}
+.container2 {
+    flex-direction: row;
+    display: flex;
+    background-color: rgba(20, 136, 49, 0.363);
+    height: 70%;
+}
+.container3 {
+    background-color: rgba(20, 99, 136, 0.363);
+    height: 100px;
+}
+
+.container2-div2 {
+    background-color: rgb(231, 128, 128);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2-div1 {
+    width: 50%;
+    background-color: aqua;
+    height:400 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+}
+.kedi2 {
+    width: 350px;
+}
+.container2-div1-1 {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 90%;
+    justify-content: center;
+    padding: 20px;
+    width: 70%;
+ 
+
+}
+.container4 {
+    background-color: rgba(175, 126, 221, 0.363);
+    height: 120%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.container4-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(119, 14, 14);
+    
+}
+.container4-2 {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(6, 68, 37);
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.container4-2-div1 {
+    width: 250px;
+    height: 400px;
+    background-color: rgba(65, 138, 143, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container4-2-div2 {
+    width: 250px;
+    height: 400px;
+    
+    background-color: rgba(42, 165, 93, 0.507);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container4-2-div3 {
+    width: 250px;
+    height: 400px;
+    background-color: rgba(110, 139, 99, 0.445);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container4-2-div4 {
+    width: 250px;
+    height: 400px;
+    background-color: rgba(42, 81, 165, 0.555);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.span1 {
+
+    text-align: center;
+
+}
+.container3 {
+    display: flex;
+    
+}
+.container3-div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.151);
+}
+.container3-div2 {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(163, 212, 166, 0.151);
+    gap: 15px;
+}
+.container3-div2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 250px;
+    background-color: blue;
+}
+@media screen and (max-width: 1400px) {
+    .container4 {
+        background-color: rgba(175, 126, 221, 0.363);
+        height: 1200px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .container4-2 {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(6, 68, 37);
+        align-items: center;
+        justify-content: center;
+        height: 1050px;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 740px) {
+    .container4 {
+        background-color: rgba(175, 126, 221, 0.363);
+        height: 2400px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .container4-2 {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(6, 68, 37);
+        align-items: center;
+        justify-content: center;
+        height: 2100px;
+        flex-wrap: wrap;
+    }
+    
+}
