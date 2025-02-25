@@ -1,0 +1,126 @@
+@font-face {
+    font-family: inter;
+    src: url(/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: manrope;
+    src: url(/font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: sora;
+    src: url(/font/Sora/Sora-VariableFont_wght.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    background-color: rgb(201, 183, 160);
+    font-family: sora;
+    height: 100%;
+    width: 100%;
+}
+button {
+    background-color: chocolate;
+    border: 2px solid rgb(165, 104, 13);
+    font-family: inter;
+    border-radius: 50px;
+    padding: 12px 5px;
+    user-select: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+}
+.header-table {
+    z-index: 1;
+    display: table;
+    position: fixed;
+    width: 100%;
+}
+.header-table-cell {
+    background-color: rgb(235, 186, 127);
+    display: table-cell;
+    padding: 10px;
+    width: 100%;
+}
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.header-content-container {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+.click-event:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+.click-event:active {
+    transform: translateY(2px);
+    transition: transform 0.1;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    background-color: chocolate;
+    right: 0%;
+    z-index: 2;
+    gap: 30px;
+    padding: 30px;
+}
+.list {
+    background-color: rgba(0, 8, 15, 0);
+    color: black;
+    border: 0px;
+    display: none;
+}
+.header-logo {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+.header-content {
+    flex-direction: column;
+    display: flex;
+}
+.header-content span:nth-child(1) {
+    font-family: sora;
+    color: rgb(0, 128, 53);
+    font-size: 22px;
+
+}
+.header-content span:nth-child(2) {
+    font-family: inter;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(67, 104, 104);
+}
+.nav-container {
+    display: flex;
+    gap: 10px;
+}
+.gost {
+    background-color: transparent; 
+    border: 2px solid green;
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+    .list {
+        display: flex;
+    }
+    .link {
+        display: none;
+    }
+}
